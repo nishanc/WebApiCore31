@@ -7,7 +7,8 @@ This repostitory consists of project for following aricles in my blog (originall
   - [.NET Core 3.0 (Preview 4) Web API Authentication from Scratch (Part 3): Token Authentication](https://medium.com/@nishancw/net-core-3-0-preview-4-web-api-authentication-from-scratch-part-3-token-authentication-2d8af41b0045)
 
   ## Setting Up
-  * Install latest .NET Core CLI
+  * Download / Clone this repository.
+  * Install latest [.NET Core 3.1](https://dotnet.microsoft.com/download/dotnet-core/3.1)
   * Create new database `MyDatabase` in SQL Server.
   * Open Visual Studio Code in `WebApiCore31` folder.
   * Open integrated terminal using Ctrl+Shift+`
