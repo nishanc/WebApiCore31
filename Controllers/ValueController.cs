@@ -17,6 +17,10 @@ namespace WebApiCore31.Controllers
         {
             _repo = repo;
         }
+
+        /// <summary>
+        /// Get all values.
+        /// </summary>
         // GET api/values
         [HttpGet]
         public async Task<IActionResult> GetValues()
@@ -25,6 +29,9 @@ namespace WebApiCore31.Controllers
             return Ok(values);
         }
 
+        /// <summary>
+        /// Get value by id.
+        /// </summary>
         // GET api/values/5
         [HttpGet("{id}")]
         public async Task<IActionResult> GetValue(int id)
@@ -38,6 +45,9 @@ namespace WebApiCore31.Controllers
             return Ok(value);
         }
 
+        /// <summary>
+        /// Creates a new value.
+        /// </summary>
         // POST api/values
         [HttpPost]
         public async Task<IActionResult> AddValue([FromBody] Value value)
@@ -46,6 +56,9 @@ namespace WebApiCore31.Controllers
             return StatusCode(201);
         }
 
+        /// <summary>
+        /// Updates a value by id.
+        /// </summary>
         // PUT api/values/5
         [HttpPut("{id}")]
         public async Task<IActionResult> UpdateValue(int id, [FromBody] Value value)
@@ -54,6 +67,9 @@ namespace WebApiCore31.Controllers
             return Ok("Value updated");
         }
 
+        /// <summary>
+        /// Deletes a value by id.
+        /// </summary>
         // DELETE api/values/5
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteValue(int id)

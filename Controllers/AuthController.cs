@@ -25,6 +25,9 @@ namespace WebApiCore31.Controllers
             _config = config;
         }
 
+        /// <summary>
+        /// Registers a new user.
+        /// </summary>
         [HttpPost("register")] //<host>/api/auth/register
         public async Task<IActionResult> Register([FromBody] UserForRegisterDto userForRegisterDto){ //Data Transfer Object containing username and password.
             // validate request
@@ -45,6 +48,9 @@ namespace WebApiCore31.Controllers
             return StatusCode(201);
         }
 
+        /// <summary>
+        /// Logs a user in.
+        /// </summary>
         [HttpPost("login")]
         public async Task<IActionResult> Login([FromBody] UserForLoginDto userForRegisterDto)
         {
