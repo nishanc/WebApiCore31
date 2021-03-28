@@ -15,3 +15,9 @@ This repostitory consists of project for following aricles in my blog (originall
   * Execute command `dotnet restore` in the terminal.
   * Execute command `dotnet ef database update` in the terminal. (to update the database using migrations)
   * Execute command `dotnet watch run` in the terminal.
+
+----
+
+### Refer [nishanc/WebApiNet50](https://github.com/nishanc/WebApiNet50) for dotnet 5.0 updated version :)
+ 
+----
